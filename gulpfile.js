@@ -3,30 +3,28 @@ const fs = require('fs');
 
 // plugins
 const gulp = require('gulp')
-  , pug = require('gulp-pug')
-  , sass = require('gulp-sass')
-  , sassGlob = require('gulp-sass-glob')
-  , browserSync = require('browser-sync').create()
-  , reload = browserSync.reload
-  , uglify = require('gulp-uglify')
-  , rename = require("gulp-rename")
-  , browserify = require('gulp-browserify')
-  , plumber = require('gulp-plumber')
-  , useref = require('gulp-useref')
-  , gulpif = require('gulp-if')
-  , cssnano = require('gulp-cssnano')
-  , autoprefixer = require('gulp-autoprefixer')
-  , sourcemaps = require('gulp-sourcemaps')
-  , imagemin = require('gulp-imagemin')
-  , imageminSvgo = require('imagemin-svgo')
-  , pngquant = require('imagemin-pngquant')
-  , urlAdjuster = require('gulp-css-url-adjuster')
-  , cssunit = require('gulp-css-unit')
-  , svgSprite = require('gulp-svg-sprite')
-  , rsp = require('remove-svg-properties')
-  , gcmq = require('gulp-group-css-media-queries')
-  , webpack = require('webpack')
-  , webpackStream = require('webpack-stream');
+const pug = require('gulp-pug')
+const sass = require('gulp-sass')
+const sassGlob = require('gulp-sass-glob')
+const browserSync = require('browser-sync').create()
+const reload = browserSync.reload
+const uglify = require('gulp-uglify')
+const rename = require("gulp-rename")
+const browserify = require('gulp-browserify')
+const plumber = require('gulp-plumber')
+const useref = require('gulp-useref')
+const gulpif = require('gulp-if')
+const cssnano = require('gulp-cssnano')
+const autoprefixer = require('gulp-autoprefixer')
+const sourcemaps = require('gulp-sourcemaps')
+const imagemin = require('gulp-imagemin')
+const urlAdjuster = require('gulp-css-url-adjuster')
+const cssunit = require('gulp-css-unit')
+const svgSprite = require('gulp-svg-sprite')
+const rsp = require('remove-svg-properties')
+const gcmq = require('gulp-group-css-media-queries')
+const webpack = require('webpack')
+const webpackStream = require('webpack-stream')
 
 // paths
 const SRC_PATH = 'app';
@@ -190,7 +188,7 @@ gulp.task('fonts', function () {
 gulp.task('watch', function () {
   gulp.watch(paths.pug.src, gulp.series('pug'))
   gulp.watch(paths.scss.src, gulp.series('sass'))
-  gulp.watch(paths.js.src, gulp.series('scripts', 'pug'))
+  gulp.watch(paths.js.src, gulp.series('scripts'))
   gulp.watch(paths.img.src, gulp.series('images'))
 });
 
