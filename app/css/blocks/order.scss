@@ -9,34 +9,18 @@
 }
 
 .order__form {
-  @extend %clearfix;
   margin-left: -5%;
-  @include tablets {
-    margin-left: 0;
-    padding: 0 20%;
-  }
-  @include phones {
-    padding: 0;
-  }
 }
 
 .order__form-col {
   float: left;
   width: 45%;
   margin-left: 5%;
-  @include tablets {
-    width: 100%;
-    float: none;
-    margin-left: 0;
-  }
 }
 
 .order__form-row {
   margin-bottom: 16px;
   display: flex;
-  @include phones {
-    margin-bottom: 7px;
-  }
 }
 
 .order__form-label {
@@ -44,9 +28,6 @@
   @include ubuntu();
   color: #fff;
   font-size: 14px;
-  @include phones {
-    margin-bottom: 5px;
-  }
 }
 
 .order__form-input {
@@ -84,21 +65,12 @@
   resize: none;
 }
 
-.order__form-buttons {
-  @include phones {
-    .order__form-row {
-      justify-content: center;
-      margin-bottom: 17px;
-    }
-  }
-}
-
 .order__radio {
   position: relative;
   white-space: nowrap;
   margin-right: 20px;
-  @include inlineblock(middle);
   cursor: pointer;
+  display: flex;
 }
 
 .order__radio-elem {
@@ -112,7 +84,6 @@
   height: 16px;
   border-radius: 50%;
   background: #fff;
-  @include inlineblock(middle);
   position: relative;
   &:after {
     content: "";
@@ -139,7 +110,6 @@
 }
 
 .order__radio-title {
-  @include inlineblock(middle);
   font-size: 14px;
   color: #fff;
   margin-left: 10px;
@@ -169,7 +139,6 @@
 }
 
 .order__form-button {
-  @include inlineblock(middle);
   margin-right: 20px;
   border: 0;
   background: $red;

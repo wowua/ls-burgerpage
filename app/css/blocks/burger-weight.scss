@@ -4,13 +4,6 @@
 	bottom: 0px;
 	left: 0;
 	opacity: .5;
-
-	@include tablets {
-		top: 0;
-		right: 0;
-		bottom: auto;
-		left: auto;
-	}
 }
 
 .burger-weight__measure {

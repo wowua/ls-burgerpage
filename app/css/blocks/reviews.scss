@@ -1,8 +1,5 @@
 .reviews {
   background: #000;
-  @include tablets {
-    min-height: 0px;
-  }
 }
 
 .reviews__list {
@@ -16,10 +13,6 @@
   width: 25%;
   height: 50%;
   position: relative;
-  @include tablets {
-    height: 25%;
-    width: 50%;
-  }
 }
 
 .review {
@@ -65,13 +58,6 @@
   padding: 17% 12% 0;
   transition: .3s;
   z-index: 10;
-  @include tablets {
-    padding: 0 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
 }
 
 .review__title {
@@ -79,10 +65,6 @@
   @include gagalin;
   font-size: 14px;
   margin-bottom: 25px;
-
-  @include phones {
-    font-size: 20px;
-  }
 }
 
 .review__shorttext {
@@ -90,10 +72,6 @@
   font-size: 14px;
   @include ubuntu(light);
   margin-bottom: 13px;
-
-  @include phones {
-    display: none;
-  }
 }
 
 .review__view {

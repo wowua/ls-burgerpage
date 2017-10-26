@@ -2,10 +2,10 @@
 .socials {
 	position: relative;
 	top: 50%;
+  display: flex;
 }
 
 .socials__item {
-	@include inlineblock(middle);
 	margin-left: 10px;
 }
 

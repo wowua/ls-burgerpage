@@ -6,15 +6,8 @@
   align-items: center;
   background-position: center center;
 
-  @include desktop{
-    background-size: auto 100%;
-  }
-
   .section__title {
     margin-bottom: 80px;
-    @include tablets {
-      margin-bottom: 40px;
-    }
   }
 }
 
@@ -24,17 +17,10 @@
   svg {
     max-width: 95%;
   }
-  @include phones {
-    position: static;
-    transform: none;
-  }
 }
 
 .best__list {
   display: flex;
-  @include phones() {
-    flex-direction: column;
-  }
 }
 
 .best__item {
@@ -42,26 +28,6 @@
   padding: 0 15px;
   display: flex;
   flex-direction: column;
-  @include phones {
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 25px;
-  }
-}
-
-.best__icon {
-  @include phones {
-    margin-right: 20px;
-    width: 30%;
-  }
-}
-
-.best__desc {
-  @include phones {
-    text-align: left;
-    display: block;
-    width: 65%;
-  }
 }
 
 .best__title {

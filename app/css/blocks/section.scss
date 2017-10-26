@@ -4,11 +4,6 @@
 	position: relative;
   display: flex;
   overflow: hidden;
-  
-	@include tablets {
-		min-height: initial;
-    // height: 100vh;
-	}
 }
 
 .section__title {

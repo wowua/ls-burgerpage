@@ -2,10 +2,6 @@
 	position: fixed;
 	top: 90px;
 	right: 40px;
-
-	@include laptop {
-		display: none;
-	}
 }
 
 .fixed-menu__link {

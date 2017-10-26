@@ -1,16 +1,6 @@
-.team-acco {
-	@include tablets {
-		padding-bottom: 20px;
-	}
-}
-
 .team-acco__item {
   margin-bottom: 40px;
   
-  @include tablets {
-    margin-bottom: 30px;
-  }
-
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -61,38 +51,22 @@
 		border-right: 5px solid transparent;
 		border-top: 0px solid transparent;
 	}
-
-	@include tablets {
-		display: inline-block;
-		font-size: 25px;
-
-		&:before {
-			margin-top: 10px;
-		}
-	}
 }
 
 .team-acco__content {
 	@extend %clearfix;
 	padding-top: 14px;
 	display: none;
-
-	@include tablets {
-		padding: 0 25%;
-	}
 }
 
 .team-acco__pic {
 	text-align: center;
 	width: 30%;
-
-	@include tablets {
-		margin-bottom: 15px;
-	}
+  display: flex;
+  justify-content: center;
 }
 
 .team-acco__img {
-	@include inlineblock();
 	width: 100px;
 	height: 100px;
 	@include cover;
@@ -105,11 +79,6 @@
 
 .team-acco__pic, .team-acco__text {
 	float: left;
-
-	@include tablets {
-		float: none;
-		width: 100%;
-	}
 }
 
 .team-acco__title {

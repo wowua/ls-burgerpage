@@ -1,9 +1,4 @@
 .nav {
-	@include inlineblock(middle);
-
-	@include tablets {
-		display: none;
-	}
 
 	&_hamburger {
 		width: auto;
@@ -19,26 +14,23 @@
 				margin: 15px auto;
 			}
 		}
-
-		@include tablets {
-			display: block;
-		}
 	}
 }
 
 .nav__list {
 	width: 100%;
-	@extend %clearfix;
-
-	@include laptop {
-		text-align: center;
-	}
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
 }
 
 .nav__item {
 	white-space: nowrap;
 	display: inline-block;
-	vertical-align: middle;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
 
 	&:last-child {
 		margin-right: 0;
@@ -48,8 +40,8 @@
 	}
 
 	&:after {
+    display: block;
 		content: "";
-		@include inlineblock(middle);
 		width: 4px;
 		height: 4px;
 		border-radius: 50%;
@@ -59,7 +51,6 @@
 }
 
 .nav__link {
-	@include inlineblock(middle);
 	font-size: 13px;
 	text-transform: uppercase;
 	color: white;
