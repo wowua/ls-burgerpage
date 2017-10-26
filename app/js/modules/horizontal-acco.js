@@ -45,8 +45,9 @@ export default () => {
     const item = $this.closest('.menu-acco__item')
 
     item.hasClass('active')
-      ? openItem(item)
-      : closeItem(item)
+      ? closeItem(item)
+      : openItem(item)
+
 
   });
 
