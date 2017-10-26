@@ -87,8 +87,8 @@ gulp.task('pug', function () {
 gulp.task('sass', function () {
   return gulp.src(paths.scss.entry)
     .pipe(plumber())
-    .pipe(sassGlob())
     .pipe(sourcemaps.init())
+    .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['> 5%'],

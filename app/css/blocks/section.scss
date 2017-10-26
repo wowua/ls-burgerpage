@@ -1,6 +1,5 @@
 .section {
-	height: 100%;
-	// height: 100vh;
+	height: if($onePage, 100%, 100vh);
 	min-height: 650px;
 	position: relative;
   display: flex;
