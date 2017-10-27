@@ -16,7 +16,7 @@ import form from './modules/form';
 import ingredients from './modules/ingredients';
 
 // one page scroll
-import './modules/one-page-scroll';
+// import './modules/one-page-scroll';
 
 $(document).ready(() => {
   slider();
