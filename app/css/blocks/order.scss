@@ -8,8 +8,15 @@
   }
 }
 
+.order__form-tag {
+  display: flex;
+
+  @include tablets() {
+    flex-direction: column;
+  }
+}
+
 .order__form {
-  @extend %clearfix;
   margin-left: -5%;
   @include tablets {
     margin-left: 0;
@@ -21,12 +28,10 @@
 }
 
 .order__form-col {
-  float: left;
   width: 45%;
   margin-left: 5%;
   @include tablets {
     width: 100%;
-    float: none;
     margin-left: 0;
   }
 }
@@ -97,8 +102,8 @@
   position: relative;
   white-space: nowrap;
   margin-right: 20px;
-  @include inlineblock(middle);
   cursor: pointer;
+  display: flex;
 }
 
 .order__radio-elem {
@@ -112,7 +117,6 @@
   height: 16px;
   border-radius: 50%;
   background: #fff;
-  @include inlineblock(middle);
   position: relative;
   &:after {
     content: "";
@@ -139,7 +143,6 @@
 }
 
 .order__radio-title {
-  @include inlineblock(middle);
   font-size: 14px;
   color: #fff;
   margin-left: 10px;
@@ -169,7 +172,6 @@
 }
 
 .order__form-button {
-  @include inlineblock(middle);
   margin-right: 20px;
   border: 0;
   background: $red;

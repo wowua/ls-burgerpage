@@ -4,6 +4,15 @@
 	}
 }
 
+
+.team-acco__data {
+  display: flex;
+
+  @include tablets() {
+    flex-direction: column;
+  }
+}
+
 .team-acco__item {
   margin-bottom: 40px;
   
@@ -73,7 +82,6 @@
 }
 
 .team-acco__content {
-	@extend %clearfix;
 	padding-top: 14px;
 	display: none;
 
@@ -104,10 +112,7 @@
 }
 
 .team-acco__pic, .team-acco__text {
-	float: left;
-
 	@include tablets {
-		float: none;
 		width: 100%;
 	}
 }

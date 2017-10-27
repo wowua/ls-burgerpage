@@ -3,12 +3,12 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-	@extend %clearfix;
+  display: flex;
 }
 
 .menu-acco__item {
-	float: left;
 	height: 100%;
+  display: flex;
 
 	&.active {
 		.menu-acco__trigger-text {
@@ -21,7 +21,6 @@
 	width: 80px;
 	display: block;
 	height: 100%;
-	float: left;
 	@include cover;
 	text-decoration: none;
   position: relative;
@@ -51,7 +50,6 @@
 
 .menu-acco__content {
 	height: 100%;
-	float: left;
 	background: rgba(#2f3234, .93);
 	width: 0;
 	overflow: hidden;

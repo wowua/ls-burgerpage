@@ -23,7 +23,6 @@
   margin-bottom: 15px;
 
 	@include phones {
-		float: none;
 		width: 100%;
 		text-align: center;
 	}
@@ -42,7 +41,6 @@
 }
 
 .footer__col_right {
-  text-align: right;
   margin-bottom: 0;
 
 	@include phones {

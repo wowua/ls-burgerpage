@@ -16,7 +16,6 @@
 .burgers-slider__right {
   flex: 1;
   @include tablets {
-    float: none;
     width: 100%;
     text-align: center;
   }
@@ -63,15 +62,24 @@
   margin-bottom: 18px;
 }
 
+.burgers-slider__options {
+  display: flex;
+  align-items: flex-end;
+
+  @include tablets() {
+    justify-content: center;
+  }
+}
+
 .burgers-slider__price {
-  @include inlineblock(middle);
+  display: flex;
+  align-items: flex-end;
   color: $red;
   @include gagalin;
 }
 
 .burgers-slider__price-amount,
 .burgers-slider__price-measure {
-  @include inlineblock(bottom);
   line-height: 1;
 }
 
@@ -87,7 +95,6 @@
 }
 
 .burgers-slider__buy {
-  @include inlineblock(bottom);
   margin-left: 32px;
 }
 

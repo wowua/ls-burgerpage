@@ -27,10 +27,8 @@
 
 .hero__left,
 .hero__right {
-  float: left;
   width: 50%;
   @include tablets {
-    float: none;
     width: 100%;
   }
 }
